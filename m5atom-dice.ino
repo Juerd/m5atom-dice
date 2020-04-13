@@ -1,7 +1,7 @@
 #include <FastLED.h>
 
 const bool _ = false;
-const bool X = true;
+const bool O = true;
 const int buttonpin = 39;
 const int ledpin = 27;
 const int numleds = 25;
@@ -10,9 +10,9 @@ int hue = 0;
 CRGB leds[numleds];
 
 const bool faces[] = {
-  _,_,_,  _,_,X,  X,_,_,  X,_,X,  X,_,X,  X,_,X,
-  _,X,_,  _,_,_,  _,X,_,  _,_,_,  _,X,_,  X,_,X,
-  _,_,_,  X,_,_,  _,_,X,  X,_,X,  X,_,X,  X,_,X,
+  _,_,_,  _,_,O,  O,_,_,  O,_,O,  O,_,O,  O,_,O,
+  _,O,_,  _,_,_,  _,O,_,  _,_,_,  _,O,_,  O,_,O,
+  _,_,_,  O,_,_,  _,_,O,  O,_,O,  O,_,O,  O,_,O,
 };
 
 void setup() {

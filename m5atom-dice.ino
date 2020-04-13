@@ -28,7 +28,7 @@ void setup() {
 
 void loop() {
     for (int i = 0; i < 10; i++) {
-        int n = random(0, 5);
+        int n = random(0, 6);
 
         for (int i = 0; i < numleds; i++) leds[i] = CRGB::Black;
 

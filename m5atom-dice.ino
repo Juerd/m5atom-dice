@@ -17,13 +17,8 @@ const bool faces[] = {
 
 void setup() {
     pinMode(buttonpin, INPUT);
-
     FastLED.addLeds < WS2812B, ledpin, GRB > (leds, numleds);
     FastLED.setBrightness(20);
-
-    FastLED.showColor(CRGB::Blue);
-    delay(500);
-    FastLED.showColor(CRGB::Black);
 }
 
 void loop() {
